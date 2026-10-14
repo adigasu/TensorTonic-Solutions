@@ -1,5 +1,6 @@
 def precision_recall_at_k(recommended: list, relevant: list, k: int) -> list[float]:
     """
+    Calculate precision and recall at k. 
     Returns [precision, recall] as a list of two floats.
     """
     top_k = recommended[:k]
