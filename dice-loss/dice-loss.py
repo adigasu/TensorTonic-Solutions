@@ -12,5 +12,4 @@ def dice_loss(p: list, y: list, eps: float = 1e-8) -> float:
         return -1
     overlap = np.sum(p * y)
     dice = (2.0 * overlap + eps) / (np.sum(p) + np.sum(y) + eps)
-    print(dice, overlap)
     return float(1.0 - dice)
